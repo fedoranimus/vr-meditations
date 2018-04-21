@@ -9,12 +9,36 @@
     <script src="app.bundle.js" type="text/javascript"></script>
 </head>
 <body>
-    <a-scene>
-        <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-        <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-        <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-        <a-sky color="#ECECEC"></a-sky>
+    <a-scene outline>
+        <a-assets>
+            <a-asset-item id="landscape" src="./assets/models/meditation_landscape.gltf"></a-asset-item>
+            <a-asset-item id="rock" src="./assets/models/rock.gltf"></a-asset-item>
+            <audio src="./assets/audio/forest-ambience.mp3" autoplay loop></audio>
+            <!-- <audio src="./assets/audio/river-ambience.mp3"></audio> -->
+            <audio id="music" src="./assets/audio/music.mp3"></audio>
+        </a-assets>
+
+        <!-- <a-entity light="type: directional; color: #fff; intensity: 1.5" position="-100 100 0"></a-entity> -->
+
+        <a-entity camera wasd-controls look-controls position="0 2 0">
+            <a-entity cursor="fuse: true; fuseTimeout: 500"
+                    position="0 0 -.5"
+                    geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                    material="color: #0366d6; shader: flat">
+                <a-animation begin="click" easing="ease-in" attribute="scale" dur="150"
+                    fill="forwards" from="0.1 0.1 0.1" to="1 1 1"></a-animation>
+                <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" dur="1500"
+                    fill="backwards" from="1 1 1" to="0.1 0.1 0.1"></a-animation>
+            </a-entity>
+        </a-entity>
+
+        <a-entity gltf-model="#landscape"></a-entity>
+        <!-- <a-entity gltf-model="#rock" cursor-listener position="-11.15 1.285 -0.567"></a-entity> -->
+        <a-box sound="src: #music" cursor-listener width=".1" height=".1" depth=".1" position="1 2 1"></a-entity>
+        <!-- <a-ocean depth="25" width="25" density=".001" position="0 1.5 0" speed="0"></a-ocean> -->
+
+        <a-sky color="black"></a-sky>
+        <a-entity star-system></a-entity>
     </a-scene>
 </body>
 </html>

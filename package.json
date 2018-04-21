@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/fedoranimus/vr-meditations#readme",
   "dependencies": {
-    "aframe": "^0.8.2"
+    "aframe": "^0.8.2",
+    "aframe-extras": "^4.0.2",
+    "aframe-outline": "^1.1.1",
+    "aframe-star-system-component": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -1,0 +1,107 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0, 
+            "componentType" : 5121, 
+            "count" : 228, 
+            "max" : [
+                211
+            ], 
+            "min" : [
+                0
+            ], 
+            "type" : "SCALAR"
+        }, 
+        {
+            "bufferView" : 1, 
+            "componentType" : 5126, 
+            "count" : 212, 
+            "max" : [
+                7.59686279296875, 
+                3.2440271377563477, 
+                7.302850723266602
+            ], 
+            "min" : [
+                -7.253137588500977, 
+                1.6440272331237793, 
+                -7.397150039672852
+            ], 
+            "type" : "VEC3"
+        }, 
+        {
+            "bufferView" : 2, 
+            "componentType" : 5126, 
+            "count" : 212, 
+            "max" : [
+                0.49528950452804565, 
+                1.0, 
+                0.5547002553939819
+            ], 
+            "min" : [
+                -0.7999997735023499, 
+                0.49026110768318176, 
+                -0.8715755939483643
+            ], 
+            "type" : "VEC3"
+        }
+    ], 
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter", 
+        "version" : "2.0"
+    }, 
+    "bufferViews" : [
+        {
+            "buffer" : 0, 
+            "byteLength" : 228, 
+            "byteOffset" : 0, 
+            "target" : 34963
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 2544, 
+            "byteOffset" : 228, 
+            "target" : 34962
+        }, 
+        {
+            "buffer" : 0, 
+            "byteLength" : 2544, 
+            "byteOffset" : 2772, 
+            "target" : 34962
+        }
+    ], 
+    "buffers" : [
+        {
+            "byteLength" : 5316, 
+            "uri" : "meditation_landscape.bin"
+        }
+    ], 
+    "meshes" : [
+        {
+            "name" : "Navmesh.012", 
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2, 
+                        "POSITION" : 1
+                    }, 
+                    "indices" : 0
+                }
+            ]
+        }
+    ], 
+    "nodes" : [
+        {
+            "mesh" : 0, 
+            "name" : "Navmesh"
+        }
+    ], 
+    "scene" : 0, 
+    "scenes" : [
+        {
+            "name" : "Scene", 
+            "nodes" : [
+                0
+            ]
+        }
+    ]
+}
